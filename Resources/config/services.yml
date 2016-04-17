@@ -1,0 +1,4 @@
+services:
+  apns_wrapper.service:
+    class: '%apns_wrapper.service.class%'
+    arguments: ['@apns_php']
