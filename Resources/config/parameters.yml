@@ -1,2 +1,0 @@
-parameters:
-  apns_wrapper.service.class: 'ApnsBundle\ApnsBundle\Service\ApnsPhpWrapper'

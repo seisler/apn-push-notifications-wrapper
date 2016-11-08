@@ -5,12 +5,16 @@ namespace ApnsBundle\Service;
 use ApnsBundle\Entity\ApnPushNotification;
 use ApnsPHP_Push;
 
+/**
+ * Class ApnsPhpWrapper
+ * @package ApnsBundle\Service
+ */
 class ApnsPhpWrapper
 {
     /**
      * @var ApnsPHP_Push
      */
-    private $_apnsPush;
+    private $apnsPush;
 
     /**
      * ApnsPhpWrapper constructor.
@@ -20,7 +24,7 @@ class ApnsPhpWrapper
         ApnsPHP_Push $apnsPush
     )
     {
-        $this->_apnsPush = $apnsPush;
+        $this->apnsPush = $apnsPush;
     }
 
     /**
@@ -30,10 +34,10 @@ class ApnsPhpWrapper
      */
     public function sendPushNotification(ApnPushNotification $notification)
     {
-        $this->_apnsPush->connect();
-        $this->_apnsPush->add($this->_createMessage($notification));
-        $this->_apnsPush->send();
-        $this->_apnsPush->disconnect();
+        $this->apnsPush->connect();
+        $this->apnsPush->add($this->createMessage($notification));
+        $this->apnsPush->send();
+        $this->apnsPush->disconnect();
     }
 
     /**
@@ -41,7 +45,7 @@ class ApnsPhpWrapper
      * @return \ApnsPHP_Message
      * @throws \ApnsPHP_Message_Exception
      */
-    private function _createMessage(ApnPushNotification $notification)
+    private function createMessage(ApnPushNotification $notification)
     {
         $message = new \ApnsPHP_Message($notification->getDeviceToken());
         $message->setBadge($notification->getBadge());

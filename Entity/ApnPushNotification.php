@@ -2,38 +2,41 @@
 
 namespace ApnsBundle\Entity;
 
-
+/**
+ * Class ApnPushNotification
+ * @package ApnsBundle\Entity
+ */
 class ApnPushNotification
 {
     /**
      * @var string
      */
-    private $_deviceToken;
+    private $deviceToken;
 
     /**
      * @var string
      */
-    private $_text;
+    private $text;
 
     /**
      * @var int
      */
-    private $_badge;
+    private $badge;
 
     /**
      * @var array
      */
-    private $_customProperties;
+    private $customProperties;
 
     /**
      * @var string
      */
-    private $_sound;
+    private $sound;
 
     /**
      * @var int
      */
-    private $_expiry;
+    private $expiry;
 
 
     /**
@@ -54,12 +57,12 @@ class ApnPushNotification
         $sound = ''
     )
     {
-        $this->setDeviceToken($deviceToken);
-        $this->setText($text);
-        $this->setBadge($badge);
-        $this->setExpiry($expiry);
-        $this->setCustomProperties($customProperties);
-        $this->setSound($sound);
+        $this->deviceToken = $deviceToken;
+        $this->text = $text;
+        $this->badge = $badge;
+        $this->expiry = $expiry;
+        $this->customProperties = $customProperties;
+        $this->sound = $sound;
     }
 
     /**
@@ -67,15 +70,7 @@ class ApnPushNotification
      */
     public function getDeviceToken()
     {
-        return $this->_deviceToken;
-    }
-
-    /**
-     * @param string $deviceToken
-     */
-    public function setDeviceToken($deviceToken)
-    {
-        $this->_deviceToken = $deviceToken;
+        return $this->deviceToken;
     }
 
     /**
@@ -83,15 +78,7 @@ class ApnPushNotification
      */
     public function getText()
     {
-        return $this->_text;
-    }
-
-    /**
-     * @param string $text
-     */
-    public function setText($text)
-    {
-        $this->_text = $text;
+        return $this->text;
     }
 
     /**
@@ -99,15 +86,7 @@ class ApnPushNotification
      */
     public function getBadge()
     {
-        return $this->_badge;
-    }
-
-    /**
-     * @param int $badge
-     */
-    public function setBadge($badge)
-    {
-        $this->_badge = $badge;
+        return $this->badge;
     }
 
     /**
@@ -115,15 +94,7 @@ class ApnPushNotification
      */
     public function getCustomProperties()
     {
-        return $this->_customProperties;
-    }
-
-    /**
-     * @param array $customProperties
-     */
-    public function setCustomProperties($customProperties)
-    {
-        $this->_customProperties = $customProperties;
+        return $this->customProperties;
     }
 
     /**
@@ -131,15 +102,7 @@ class ApnPushNotification
      */
     public function getSound()
     {
-        return $this->_sound;
-    }
-
-    /**
-     * @param string $sound
-     */
-    public function setSound($sound)
-    {
-        $this->_sound = $sound;
+        return $this->sound;
     }
 
     /**
@@ -147,14 +110,6 @@ class ApnPushNotification
      */
     public function getExpiry()
     {
-        return $this->_expiry;
-    }
-
-    /**
-     * @param mixed $expiry
-     */
-    public function setExpiry($expiry)
-    {
-        $this->_expiry = $expiry;
+        return $this->expiry;
     }
 }
