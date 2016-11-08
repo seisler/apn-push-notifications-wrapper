@@ -1,6 +1,6 @@
 <?php
 
-namespace ApnsBundle\Service;
+namespace Seisler\ApnsBundle\Service;
 
 use ApnsBundle\Entity\ApnPushNotification;
 use ApnsPHP_Push;

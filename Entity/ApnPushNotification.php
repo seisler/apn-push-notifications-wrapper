@@ -1,6 +1,6 @@
 <?php
 
-namespace ApnsBundle\Entity;
+namespace Seisler\ApnsBundle\Entity;
 
 /**
  * Class ApnPushNotification

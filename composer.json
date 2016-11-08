@@ -12,12 +12,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "": "src/"
-        },
-        "classmap": [
-            "app/AppKernel.php",
-            "app/AppCache.php"
-        ]
+            "Seisler\\ApnsBundle\\": ""
+        }
     },
     "autoload-dev": {
         "psr-4": {
