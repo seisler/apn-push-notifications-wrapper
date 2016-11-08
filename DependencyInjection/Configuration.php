@@ -26,7 +26,7 @@ class Configuration implements ConfigurationInterface
                     ->cannotBeEmpty()
                 ->end()
                 ->scalarNode('environment')
-                    ->setDefault('sandbox')
+                    ->defaultValue('sandbox')
                 ->end()
             ->end();
 
