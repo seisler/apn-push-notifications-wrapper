@@ -2,7 +2,7 @@
 
 namespace Seisler\ApnsBundle\Service;
 
-use ApnsBundle\Entity\ApnPushNotification;
+use Seisler\ApnsBundle\Entity\ApnPushNotification;
 use ApnsPHP_Push;
 
 /**
