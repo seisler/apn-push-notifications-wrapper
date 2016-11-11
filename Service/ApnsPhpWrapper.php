@@ -29,6 +29,7 @@ class ApnsPhpWrapper
 
     /**
      * @param ApnPushNotification $notification
+     * @return ApnsPHP_Push
      * @throws \ApnsPHP_Exception
      * @throws \ApnsPHP_Push_Exception
      */
@@ -38,6 +39,8 @@ class ApnsPhpWrapper
         $this->apnsPush->add($this->createMessage($notification));
         $this->apnsPush->send();
         $this->apnsPush->disconnect();
+
+        return $this->apnsPush;
     }
 
     /**
