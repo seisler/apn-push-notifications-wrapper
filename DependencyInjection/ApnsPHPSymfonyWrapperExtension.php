@@ -1,6 +1,6 @@
 <?php
 
-namespace ApnsBundle\DependencyInjection;
+namespace Seisler\ApnsBundle\DependencyInjection;
 
 use ApnsPHP_Abstract;
 use ApnsPHP_Push;

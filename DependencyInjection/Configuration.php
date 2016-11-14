@@ -1,6 +1,6 @@
 <?php
 
-namespace ApnsBundle\DependencyInjection;
+namespace Seisler\ApnsBundle\DependencyInjection;
 
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
