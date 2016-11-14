@@ -10,7 +10,7 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
-class ApnsPHPSymfonyWrapperExtension extends Extension
+class ApnsExtension extends Extension
 {
 
     /**
