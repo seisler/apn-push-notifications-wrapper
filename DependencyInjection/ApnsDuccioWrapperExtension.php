@@ -30,8 +30,7 @@ class ApnsDuccioWrapperExtension extends Extension
             $container,
             new FileLocator(__DIR__.'/../Resources/config')
         );
-        $loader->load('services.yml');
-        $loader->load('parameters.yml');
+        $loader->load('services.xml');
 
         $processor = new Processor();
         $configuration = new Configuration();
@@ -44,12 +43,8 @@ class ApnsDuccioWrapperExtension extends Extension
             $env = ApnsPHP_Abstract::ENVIRONMENT_PRODUCTION;
         }
 
-        $apns = new ApnsPHP_Push(
-            $env,
-            $config['pem_path']
-        );
-
-        $container->set('apns_php', $apns);
+        $container->setParameter('apns.pem_path', $config['pem_path']);
+        $container->setParameter('apns.environment', $env);
     }
 
     /**

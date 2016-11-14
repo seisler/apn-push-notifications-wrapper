@@ -1,4 +1,0 @@
-services:
-  apns_wrapper.service:
-    class: Seisler\ApnsBundle\Service\ApnsPhpWrapper
-    arguments: ['@apns_php']
