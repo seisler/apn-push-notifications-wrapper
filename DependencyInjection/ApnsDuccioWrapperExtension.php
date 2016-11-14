@@ -46,7 +46,7 @@ class ApnsDuccioWrapperExtension extends Extension
 
         $apns = new ApnsPHP_Push(
             $env,
-            $config['pem_file']
+            $config['pem_path']
         );
 
         $container->set('apns_php', $apns);
