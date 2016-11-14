@@ -10,9 +10,12 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
-class ApnsExtension extends Extension
+/**
+ * Class ApnsDuccioWrapperExtension
+ * @package Seisler\ApnsBundle\DependencyInjection
+ */
+class ApnsDuccioWrapperExtension extends Extension
 {
-
     /**
      * Loads a specific configuration.
      *
