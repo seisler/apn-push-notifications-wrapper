@@ -48,4 +48,12 @@ class ApnsExtension extends Extension
 
         $container->set('apns_php', $apns);
     }
+
+    /**
+     * @return string
+     */
+    public function getAlias()
+    {
+        return 'apns_php_wrapper';
+    }
 }
