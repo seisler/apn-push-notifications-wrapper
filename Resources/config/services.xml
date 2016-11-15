@@ -6,7 +6,6 @@
 
     <services>
         <service id="apns_wrapper.service" class="Seisler\ApnsBundle\Service\ApnsPhpWrapper">
-            <argument>%apns.environment%</argument>
             <argument type="service" id="apns_php"/>
         </service>
         <service id="apns_php" class="ApnsPHP_Push">
