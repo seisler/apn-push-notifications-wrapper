@@ -48,7 +48,7 @@ class ApnPushNotification
      * @param array $customProperties
      * @param string $sound
      */
-    public function __constructor(
+    public function __construct(
         $deviceToken,
         $text,
         $badge = 1,
