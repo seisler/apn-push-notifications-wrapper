@@ -10,8 +10,8 @@
             <argument type="service" id="apns_php"/>
         </service>
         <service id="apns_php" class="ApnsPHP_Push">
-            <argument>%apns.environment%</argument>
-            <argument>%apns.pem_path%%</argument>
+            <argument>%apns_php_wrapper.environment%</argument>
+            <argument>%apns_php_wrapper.pem_path%</argument>
         </service>
     </services>
 </container>

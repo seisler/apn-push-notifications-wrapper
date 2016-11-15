@@ -43,8 +43,8 @@ class ApnsDuccioWrapperExtension extends Extension
             $env = ApnsPHP_Abstract::ENVIRONMENT_PRODUCTION;
         }
 
-        $container->setParameter('apns.pem_path', $config['pem_path']);
-        $container->setParameter('apns.environment', $env);
+        $container->setParameter('apns_php_wrapper.pem_path', $config['pem_path']);
+        $container->setParameter('apns_php_wrapper.environment', $env);
     }
 
     /**
